@@ -1,0 +1,15 @@
+import numpy as np
+import cv2
+
+img = cv2.imread("chris.jpg", 1)
+print(img)  # 1. print image pixels
+a1 = type(img) # 2. types of the image
+a2 = len(img)  # 3. image length 
+print(a1, a2)
+
+b1 = len(img[0])  # # of columns of the image 
+b2 = len(img[0][0]) # # of channels of the image RGB
+print(b1, b2)
+
+c = img.shape  # everything included 
+print(c)
